@@ -1,15 +1,43 @@
-# People and Cars App
+# People and Cars App - React + Apollo + GraphQL
 
-A full-stack web application built with React, Apollo Client, GraphQL, and Express.js to manage people and their cars.
+**Student Assignment: Advanced Topics in Web Development**
 
-## Features
+A full-stack web application built with React, Apollo Client, GraphQL, and Express.js to manage people and their cars with complete CRUD operations.
 
-- **CRUD Operations**: Create, Read, Update, Delete for both people and cars
-- **Optimistic UI**: Changes are reflected immediately without waiting for server response
-- **Responsive Design**: Built with Ant Design components for a modern look
-- **Real-time Updates**: GraphQL subscriptions keep data in sync
-- **Routing**: React Router for navigation between pages
-- **Currency Formatting**: Proper display of car prices as currency
+## 🚀 Live Demo
+
+- **Frontend**: http://localhost:3000
+- **Backend GraphQL API**: http://localhost:4000/graphql
+- **GraphQL Playground**: http://localhost:4000/graphql
+
+## 📋 Assignment Requirements Met
+
+### ✅ **Technical Requirements**
+- [x] **React Frontend** with Apollo Client
+- [x] **GraphQL Server** with Apollo Server + Express
+- [x] **Complete CRUD Operations** for both People and Cars
+- [x] **Optimistic UI** - Changes reflect immediately
+- [x] **React Router** for navigation (Home `/` and Person Detail `/people/:id`)
+- [x] **Ant Design** for modern UI components
+- [x] **Currency Formatting** for all car prices
+- [x] **Form Validation** with required fields
+- [x] **Responsive Design** that works on all devices
+
+### ✅ **Business Logic**
+- [x] **Person Management**: Add, Edit, Delete people
+- [x] **Car Management**: Add, Edit, Delete cars with owner selection
+- [x] **Automatic Deletion**: When person is deleted, their cars are also deleted
+- [x] **Owner Transfer**: Cars can be transferred between people
+- [x] **Dynamic Forms**: Car form hidden when no people exist
+- [x] **Nested Display**: Cars displayed as sub-cards within person cards
+
+### ✅ **UI/UX Features**
+- [x] **Person Cards**: Display with Edit/Delete buttons and "Learn More" link
+- [x] **Car Cards**: Nested display with year, make, model, and formatted price
+- [x] **Inline Editing**: Click Edit to transform display into editable form
+- [x] **Show Page**: Separate page for person details with "Go Back Home" link
+- [x] **Centered Layout**: Forms and headings properly centered
+- [x] **Professional Styling**: Modern, clean design with proper spacing
 
 ## Technology Stack
 
