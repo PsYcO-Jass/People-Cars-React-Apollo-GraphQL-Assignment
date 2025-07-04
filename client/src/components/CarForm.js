@@ -61,7 +61,7 @@ const CarForm = () => {
   const people = peopleData?.people || [];
 
   if (people.length === 0) {
-    return null; // Hide form when no people
+    return null;
   }
 
   return (

@@ -20,7 +20,6 @@ const CarCard = ({ car, people }) => {
         ).filter(c => c.personId === person.id)
       }));
       
-      // Add car to new person if personId changed
       const newPerson = updatedPeople.find(p => p.id === updateCar.personId);
       if (newPerson && !newPerson.cars.find(c => c.id === updateCar.id)) {
         newPerson.cars.push(updateCar);
