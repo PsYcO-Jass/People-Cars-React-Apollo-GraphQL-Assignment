@@ -22,7 +22,7 @@ const Home = () => {
       </div>
       
       <div>
-        <h2>Records</h2>
+        <h2 className="records-heading">Records</h2>
         {people.length === 0 ? (
           <Alert message="No people found" type="info" />
         ) : (

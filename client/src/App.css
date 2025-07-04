@@ -6,16 +6,43 @@
   min-height: 100vh;
 }
 
+/* Updated: 2025-07-04 - Force vertical layout */
 .forms-container {
-  display: flex;
-  justify-content: space-between;
+  display: flex !important;
+  flex-direction: column !important;
   margin-bottom: 30px;
   gap: 20px;
 }
 
+/* More specific selector to override any Ant Design styles */
+div.forms-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
 .form-card {
-  flex: 1;
-  max-width: 500px;
+  width: 100% !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  flex: none !important;
+}
+
+/* Records heading styling */
+.records-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #001529;
+  margin: 40px 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #1890ff;
+  padding-bottom: 15px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .people-grid {
