@@ -1,0 +1,25 @@
+{
+  "name": "people-cars-app",
+  "version": "1.0.0",
+  "description": "A React + Apollo + GraphQL app to manage people and their cars",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "install-deps": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "react",
+    "apollo",
+    "graphql",
+    "express",
+    "people",
+    "cars"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
